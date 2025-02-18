@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(sola-space/stars.jpg); 
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+
+.sun {
+    width: 95px;
+    height: 95px;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%; 
+   left: 50%;
+   margin: auto;
+  box-shadow: -4px 2px 56px #f9c05f;
+}
+.mercure-1 {
+    width: 115px;
+    height: 115px;
+    border: 1px solid #fff;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: auto;
+    border-radius: 50%;
+} 
+.mercure-img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+   position: absolute;
+   top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+   overflow: hidden;
+   margin: auto;
+   animation: road 5s linear infinite;
+   -webkit-animation:  road 5s linear infinite;
+   box-shadow: -4px 2px 56px #f9c05f;
+}
+.merc-p {
+color: #fff;
+bottom: 20%;
+font-size: 16px;
+position: absolute;
+left: 10px;
+top: 50px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: road 1.3s linear infinite;
+   -webkit-animation:  road 5s linear infinite;
+}
+
+@keyframes road {
+0% {
+    transform: rotate(0deg)translate(-60px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-60px)rotate(-360deg);
+}
+}
+
+.venus-1 {
+height: 170px;
+width: 170px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+transform: translate(-50%, -50%); 
+ top: 50%;
+left: 50%;
+
+}
+
+.venus-img {
+height: 35px;
+width: 35px;
+border: none;
+border-radius: 50%;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px brown;
+-webkit-animation: venus 8s linear infinite;
+animation: venus 8s linear infinite;
+}
+@keyframes venus {
+0% {
+    transform: rotate(0deg)translate(-80px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-80px)rotate(-360deg);
+}
+}
+.venus-p {
+color: #fff;
+font-size: 15px;
+position: absolute;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+top: 40%;
+left: 28%;
+-webkit-animation: venus 8s linear infinite;
+    animation: venus 8s linear infinite;
+}
+.eart-1 {
+width: 250px;
+height: 250px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%; 
+ transform: translate(-50%, -50%); 
+}
+.eart {
+width: 38px;
+height: 38px;
+border-radius: 50%;
+animation: eart 4s linear infinite;
+ position: absolute;
+ top: 0;
+bottom: 0;
+left: 0%;
+right: -8px;
+overflow: hidden;
+margin: auto;
+box-shadow: -4px 2px 56px blue; 
+-webkit-animation: eart 12s linear infinite;
+animation: eart 12s linear infinite; 
+}
+
+@keyframes eart {
+0% {
+    transform: rotate(0deg)translate(-120px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-120px)rotate(0deg);
+}
+}
+.eart-p {
+color: #fff;
+font-size: 15px;
+position: absolute;
+top: 50%;
+left: 40%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+-webkit-animation: earte 12s linear infinite;
+animation: earte 12s linear infinite;
+}
+@keyframes earte {
+0% {
+    transform: rotate(0deg)translate(-120px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-120px)rotate(-360deg);
+}
+}
+.lune-1 {
+width: 50px;
+height: 50px;
+position: absolute;
+-webkit-animation: lune-rotate 12s linear infinite;
+animation: lune-rotate 12s linear infinite;
+border: 1px solid #fff;
+border-radius: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+margin: auto;
+bottom: 0;
+ top: -5px; 
+left: 5px;
+bottom: -2px;
+right: 0; 
+display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+@keyframes lune-rotate {
+0% {
+    transform: rotate(0deg)translate(-120px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-120px)rotate(-360deg)
+}
+} 
+
+
+.lune {
+width: 15px;
+height: 15px;
+animation: lun 2s linear infinite;
+-webkit-animation: lun 2s linear infinite;
+border-radius: 50%; 
+
+}
+
+.lune::before {
+content: "";
+position: absolute;
+height: 12px;
+width: 12px;
+border-radius: 50%;
+}
+
+@keyframes lun {
+0% {
+    transform: rotate(0deg)translate(25px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(25px)rotate(-360deg);
+}
+} 
+.mars-1 {
+width: 308px;
+height: 308px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.mars-img {
+height: 30px;
+width: 30px;
+border-radius: 50%;
+border: none;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px brown;
+animation: mars 15s linear infinite;
+}
+
+@keyframes mars {
+0% {
+    transform: rotate(0deg)translate(-150px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-150px)rotate(-360deg);
+}
+}
+.mars-p {
+color: #fff;
+font-size: 15px;
+position: absolute;
+top: 50%;
+left: 40%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: mars 15s linear infinite;
+}
+.jupiter-1 {
+width: 380px;
+height: 380px;
+border: 0.25px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+.jupiter {
+height: 70px;
+width: 70px;
+border-radius: 50%;
+border: none;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px brown;
+animation: jupiter 20s linear infinite;
+}
+@keyframes jupiter {
+0% {
+    transform: rotate(0deg)translate(-190px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-190px)rotate(-360deg);
+}
+}
+.jupiter-p {
+color: #fff;
+font-size: 14px;
+position: absolute;
+top: 53%;
+left: 47%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: jupiter 20s linear infinite;
+}
+.saturn-1 {
+width: 450px;
+height: 450px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+.saturn-img {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: none;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px brown;
+animation: saturn 30s linear infinite;
+}
+
+
+.saturn-p {
+color: #fff;
+font-size: 14px;
+position: absolute;
+top: 53%;
+left: 47%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: saturn 30s linear infinite;
+
+}
+
+@keyframes saturn {
+0% {
+    transform: rotate(0deg)translate(-230px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-230px)rotate(-360deg);
+}
+} 
+.uranus-1 {
+width: 530px;
+height: 530px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+.uranus-img {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: none;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px blue;
+animation: uranus 40s linear infinite;
+}
+.uranus-p {
+color: #fff;
+font-size: 14px;
+position: absolute;
+top: 53%;
+left: 47%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: uranus 40s linear infinite;
+}
+
+@keyframes uranus {
+0% {
+    transform: rotate(0deg)translate(-260px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-260px)rotate(-360deg);
+}
+} 
+.neptune-1 {
+width: 600px;
+height: 600px;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+.neptune-img {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: none;
+position: absolute;
+overflow: hidden;
+top: 0;
+bottom: 0;
+left: 0%;
+right: 0;
+margin: auto;
+box-shadow: -4px 2px 56px blue;
+animation: neptune 70s linear infinite;
+}
+.neptune-p {
+color: #fff;
+font-size: 14px;
+position: absolute;
+top: 53%;
+left: 47%;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+animation: neptune 70s linear infinite;
+}
+
+@keyframes neptune {
+0% {
+    transform: rotate(0deg)translate(-300px)rotate(0deg);
+}
+100% {
+    transform: rotate(360deg)translate(-300px)rotate(-360deg);
+}
+} 
+.row {
+display: flex;
+justify-content: flex-end;
+    background: url(sola-space/stars.jpg);
+    flex-direction: row;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+}
+.me:hover {
+color: lightblue;
+}
+
+h3 {
+color: #252839;
+position: relative;
+-webkit-text-stroke: 2px  #383d52;
+font-size: 50px;
+right: 0;
+left: 0;
+position: fixed;
+}
+h3::before {
+position: absolute;
+content:attr(data-text);
+-webkit-text-stroke: 2px #383d52;
+color: #01fa87;
+border-right: 2px solid #01fa87;
+overflow: hidden;
+animation: hey 4s linear infinite;
+}
+@keyframes hey {
+0%, 10%, 100% {
+    width: 0%;
+}
+70%, 90%{
+    width: 34%;
+}
+}
