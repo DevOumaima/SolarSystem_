@@ -8,10 +8,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(sola-space/space.jpg); 
-    display: flex;
-    justify-content: center;
-     align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(sola-space/space.jpg);
 }
 
 .sun {
